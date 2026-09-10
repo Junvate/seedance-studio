@@ -1,0 +1,31 @@
+{
+  "name": "open-video-studio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A self-hosted, provider-neutral video generation workspace.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "tsc -b && vite build",
+    "start": "NODE_ENV=production node server.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "check:ui": "node scripts/visual-check.mjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.5"
+  }
+}
